@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "First Day at BAM!"
+date:   2025-11-03 08:35:54 -0600
+categories: BAM blog
+---
+| Hello, my name is Trevor Ratliff, you killed my father ... prepare to die
+
+... er - no, we're not in that movie.
