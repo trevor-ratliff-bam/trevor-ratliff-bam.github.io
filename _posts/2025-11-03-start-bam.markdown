@@ -2,7 +2,11 @@
 layout: post
 title:  "First Day at BAM!"
 date:   2025-11-03 08:35:54 -0600
-categories: BAM blog
+category: BAM blog daily
+# 
+# full log:
+# -6:00-  up, readied for day
+# 
 ---
 | Hello, my name is Trevor Ratliff, you killed my father ... prepare to die
 

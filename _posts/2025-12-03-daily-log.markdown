@@ -1,0 +1,38 @@
+---
+layout: post
+title:  "Daily Log 2025-12-03"
+date:   2025-12-03 07:52:30 -0600
+category: BAM blog daily
+# 
+# log - Interrobang: &#xB7; ·
+# - 6:30- up, prayed & readied for day
+# - 7:15- at work, caught up on teams/email, started task 422875 (removing manage unauthorized users)  
+# - @ 9:00- stand-up
+# - 9:15- tried to get local system running again ... I could only get the my-vector/system-admin (new angular app) working if I was also running usaf-myvector in VS 2022.  Just running from IIS kept hitting "looping/redirect" issues where I'd loose my authorization cookies and have to log in again, but it wouldn't let me get to the correct places (due to redirect rules maybe???)
+#   - I also mucked with agent mode in continue for far too long ... it had issues trying to make edits from a 'chat' window in agent mode
+# - 4:20- off work
+#   - prep for youth activities
+# - 6:00- started working on pictures, got first pass on all, did most of 2nd edit on family pictures
+# - 9:30- kids home, worked with Ada to calm her down
+# - 12:00- girls down, massaged Aimee
+# - 2:30- ready for bed - but found animal pee on luvsac blanket
+# - 3:50- bed
+# 
+---
+# Daily Log 2025-12-03
+
+## to do
+<!--
+  · = scheduled to do (Interrobang: · or &#xB7;)
+  / = partially done at end of day
+  x = completed at end of day 
+  < = rescheduled for another day 
+-->
+```
+/ CHANGE 422865 (task 422875)
+```
+
+## log
+I tried to get local system running again today, but it didn't work ... so frustrating.  I could only get the my-vector/system-admin (new angular app) working if I was also running usaf-myvector in VS 2022.  Just running from IIS kept hitting "looping/redirect" issues where I'd loose my authorization cookies and have to log in again, but it wouldn't let me get to the correct places (due to redirect rules or base_url maybe???).  
+
+At least I was able to get things to run again.

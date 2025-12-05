@@ -1,0 +1,44 @@
+---
+layout: post
+title:  "Daily Log 2025-12-02"
+date:   2025-12-02 15:16:54 -0600
+category: BAM blog daily
+# 
+# to do:
+# x get sf rental return date adjusted (12-6) 
+# 
+# full log:
+# -06:30- up, showered, walked dog, got receipt from MS Propane  
+# -3:30- off work, dinner outside animal stuff???
+# -9:00- scriptures
+# -07:10- at work  
+#   - looking at teams to get caught up on chats I've missed  
+#   - looking at a PR to start familiarizing myself with how those are run  
+# @9:00- stand-up  
+# -9:15- making sure I could still run apps
+# @11:00- weekly discovery  
+# -12:40- tried to get the `bam git get-angular` to work  
+#  - it clones a repo, tries to do something before cloning the next and dies with a super vague error  
+#    - the powershell script to get the repos works fine on its own ... not sure why the wrapped code doesn't work
+# -2:00- started looking at CHANGE 422865 (task 422875)  
+# -3:30- off work
+# 
+---
+
+# Daily Log 2025-12-02
+
+## to do
+<!--
+  · = scheduled to do (Interrobang: · or &#xB7;)
+  / = partially done at end of day
+  x = completed at end of day 
+  < = rescheduled for another day 
+-->
+```
+x get some tasking from PAW
+```
+
+## log
+I continued my computer setup journey with trying to use the BAM cli to get the angular sites.  Currently if I run the `bam git get-angular` command it gets up to cloning 1 repo, then breaks.  When I ran the powershell script it uses, the script worked fine.  I'm not sure why the cli breaks.
+
+I participated in a Weekly Discovery meeting where for the first time I was able to get some work tailored for me.  I'm glad I can finally get to some productive work after a long onboarding period.
