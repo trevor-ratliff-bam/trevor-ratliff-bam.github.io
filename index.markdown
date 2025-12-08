@@ -3,9 +3,12 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: page
+permalink: /
 ---
 
-# Home of Trevor-Ratliff-BAM
+# Home
+I'm Trevor Ratliff, I work for BAM Technologies.
+
 You can learn more [about me here](/about)
 
 You can view some of my [musings in the blog](/blog)
