@@ -9,8 +9,6 @@ category: daily
 # 
 ---
 
-# Daily Log <<DATE>>
-
 ## To Do
 <!--
   · = scheduled to do (Interrobang: · or &#xB7;)

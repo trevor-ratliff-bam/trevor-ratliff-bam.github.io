@@ -19,7 +19,6 @@ category: BAM blog daily
 # - 3:50- bed
 # 
 ---
-# Daily Log 2025-12-03
 
 ## to do
 <!--

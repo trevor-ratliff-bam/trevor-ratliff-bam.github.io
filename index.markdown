@@ -2,5 +2,10 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-layout: home
+layout: page
 ---
+
+# Home of Trevor-Ratliff-BAM
+You can learn more [about me here](/about)
+
+You can view some of my [musings in the blog](/blog)
