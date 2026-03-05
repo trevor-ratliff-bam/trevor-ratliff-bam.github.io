@@ -1,0 +1,26 @@
+{
+  "short_name": "Flashcards",
+  "name": "Flashcard Application",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "200x200 192x192 128x128 64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "icon.svg",
+      "type": "image/svg",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo.svg",
+      "type": "image/svg",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "version": "20250210.1432"
+}

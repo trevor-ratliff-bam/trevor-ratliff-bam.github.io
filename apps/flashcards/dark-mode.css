@@ -1,0 +1,301 @@
+/* Dark Mode Styles for Flashcard App */
+
+:root {
+    --background-color: #121212;
+    --card-color: #1e1e1e;
+    --text-color: #ffffff;
+    --accent-color: #667eea;
+    --border-color: #333333;
+    --block-color: #b0b0b0;
+    --toggle-color: #ccc;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --transition: all 0.3s ease;
+}
+
+/* Global Styles */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: var(--transition);
+}
+
+.container {
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    /* border-radius: 8px; */
+    box-shadow: 0 4px 12px var(--shadow-color);
+    /*max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;*/
+}
+
+/*header {
+    text-align: center;
+    margin-bottom: 2rem;
+}*/
+
+h1 {
+    color: var(--accent-color);
+    /*margin-bottom: 0.5rem;*/
+}
+
+p {
+    color: var(--block-color);
+    /*margin-top: 0.25rem;*/
+}
+
+/* Controls Section */
+.controls,
+.controls-nav {
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    /*border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;*/
+}
+
+/*.file-upload,
+.toggle-container,
+.search-container {
+    margin-bottom: 1rem;
+}*/
+
+/*.file-upload label,
+.toggle-container label,
+.search-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+}*/
+
+input[type="file"],
+input[type="text"],
+input[type="checkbox"] {
+    /*width: 100%;
+    padding: 0.5rem;*/
+    border: 1px solid var(--border-color);
+    /*border-radius: 4px;*/
+    background-color: var(--card-color);
+    color: var(--text-color);
+}
+
+/*input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}*/
+
+.slider {
+    /*position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;*/
+    background-color: var(--toggle-color);
+    /*-webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 34px;*/
+}
+
+.slider:before {
+    /*position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;*/
+    background-color: white;
+    /*-webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 50%;*/
+}
+
+input[type="checkbox"]:checked + .slider {
+    background-color: var(--accent-color);
+}
+
+input[type="checkbox"]:focus + .slider {
+    box-shadow: 0 0 1px var(--accent-color);
+}
+
+/*input[type="checkbox"]:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}*/
+
+/* Flashcard Styles */
+/*.flashcard-container {
+    margin: 2rem 0;
+    perspective: 1000px;
+}*/
+
+.flashcard {
+    /*width: 100%;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;*/
+    transition: var(--transition);
+    /*cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;*/
+    box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.flashcard-inner {
+    /*position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 8px;*/
+    transition: var(--transition);
+    box-shadow: inset 0 0 10px var(--shadow-color);
+}
+
+.flashcard-front,
+.flashcard-back {
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 8px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;*/
+    box-shadow: inset 0 0 10px var(--shadow-color);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+}
+
+.flashcard-front {
+    transform: rotateY(0deg);
+}
+
+.flashcard-back {
+    transform: rotateY(180deg);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.flashcard-inner.flip .flashcard-front,
+.flashcard-inner.flip .flashcard-back {
+    transform: rotateY(180deg);
+}
+
+.card-content {
+    /*font-size: 2rem;
+    text-align: center;
+    line-height: 1;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;*/
+    color: var(--text-color);
+}
+
+/* Navigation Controls */
+/*.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}*/
+
+.nav-btn {
+    /*padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;*/
+    background-color: var(--accent-color);
+    /*color: white;
+    cursor: pointer;*/
+    transition: var(--transition);
+}
+
+.nav-btn:hover {
+    background-color: #5a6fc9;
+}
+
+.nav-btn:disabled {
+    background-color: #cccccc;
+    /*cursor: not-allowed;*/
+}
+
+/* Toggle Controls Button */
+.toggle-controls-btn {
+    /*
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 40%;
+    */
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    /*border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;*/
+    box-shadow: 0 4px 12px var(--shadow-color);
+    transition: var(--transition);
+}
+
+.toggle-controls-btn:hover {
+    background-color: #5a6fc9;
+}
+
+/* Search Button */
+.clear-search-btn {
+    /*background: none;
+    border: none;*/
+    color: var(--toggle-color);
+    /*cursor: pointer;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+    opacity: 0.7;
+    transition: opacity 0.3s;*/
+}
+
+.clear-search-btn:hover {
+    opacity: 1;
+}
+
+/* Progress Indicator */
+#progress,
+#card-counter {
+    color: var(--accent-color);
+    /*font-weight: bold;
+    margin: 0 0.5rem;*/
+}
+
+/* Responsive Styles */
+/*@media (max-width: 600px) {
+    .container {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+
+    .flashcard {
+        height: 200px;
+    }
+
+    .card-content {
+        font-size: 1.5rem;
+    }
+
+    .navigation {
+        flex-direction: column;
+    }
+
+    .nav-btn {
+        width: 100%;
+        margin: 0.25rem 0;
+    }
+}*/

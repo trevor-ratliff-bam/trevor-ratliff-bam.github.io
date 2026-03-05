@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Interactive flashcard application for vocabulary study">
+    <meta name="theme-color" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Flashcards">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Flashcards">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="logo192.png">
+    <link rel="stylesheet" id="dark-mode-toggle" href="">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="deck-title">Flashcard Deck</h1>
+            <p id="deck-description">Select a data file to begin studying</p>
+
+            <button id="toggle-controls" class="toggle-controls-btn">🞃</button>
+            <button id="toggle-theme" class="toggle-theme-btn">🌓 Dark Mode</button>
+        </header>
+
+        <div class="controls" id="controls-section">
+            <div class="file-upload">
+                <label for="file-input">Load Flashcards:</label>
+                <input type="file" id="file-input" accept=".json">
+            </div>
+
+            <div class="toggle-container">
+                <label class="switch">
+                    <input type="checkbox" id="randomize-toggle" checked>
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-label">Randomize Cards</span>
+            </div>
+
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search cards...">
+                <button id="clear-search" class="clear-search-btn">✕</button>
+            </div>
+        </div>
+
+        <div class="flashcard-container">
+            <div class="flashcard" id="flashcard">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">
+                        <div class="card-content" id="card-word">Click to flip</div>
+                    </div>
+                    <div class="flashcard-back">
+                        <div class="card-content" id="card-definition">Click to flip</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls-nav" id="nav-controls-section">
+            <div class="navigation">
+                <button id="prev-btn" class="nav-btn">Previous</button>
+                <span id="progress">0 / 0</span>
+                <span id="card-counter">Card 0 of 0</span>
+                <button id="next-btn" class="nav-btn">Next</button>
+                <button id="shuffle-btn" class="nav-btn">Shuffle</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
